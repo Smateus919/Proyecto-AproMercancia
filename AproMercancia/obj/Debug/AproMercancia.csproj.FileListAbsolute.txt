@@ -1,0 +1,12 @@
+C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\obj\Debug\AproMercancia.csprojAssemblyReference.cache
+C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\obj\Debug\AproMercancia.Form1.resources
+C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\obj\Debug\AproMercancia.PL.frmProductos.resources
+C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\obj\Debug\AproMercancia.PL.frmVentas.resources
+C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\obj\Debug\AproMercancia.Properties.Resources.resources
+C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\obj\Debug\AproMercancia.csproj.GenerateResource.cache
+C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\obj\Debug\AproMercancia.csproj.CoreCompileInputs.cache
+C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\bin\Debug\AproMercancia.exe.config
+C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\bin\Debug\AproMercancia.exe
+C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\bin\Debug\AproMercancia.pdb
+C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\obj\Debug\AproMercancia.exe
+C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\obj\Debug\AproMercancia.pdb
