@@ -28,5 +28,11 @@ namespace AproMercancia
         {
             Close();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmVentas fVentas = new frmVentas();
+            fVentas.Show();
+        }
     }
 }

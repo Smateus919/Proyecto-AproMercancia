@@ -43,8 +43,6 @@ namespace AproMercancia.PL
             this.txtCantTienda = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtCantBodega = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtCantTotal = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -167,26 +165,10 @@ namespace AproMercancia.PL
             this.txtCantBodega.Size = new System.Drawing.Size(45, 20);
             this.txtCantBodega.TabIndex = 19;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(505, 97);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 13);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "Cant. Total";
-            // 
-            // txtCantTotal
-            // 
-            this.txtCantTotal.Location = new System.Drawing.Point(505, 112);
-            this.txtCantTotal.Name = "txtCantTotal";
-            this.txtCantTotal.Size = new System.Drawing.Size(45, 20);
-            this.txtCantTotal.TabIndex = 21;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(570, 96);
+            this.label9.Location = new System.Drawing.Point(510, 96);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(52, 13);
             this.label9.TabIndex = 24;
@@ -273,9 +255,9 @@ namespace AproMercancia.PL
             // cbxCategoria
             // 
             this.cbxCategoria.FormattingEnabled = true;
-            this.cbxCategoria.Location = new System.Drawing.Point(573, 112);
+            this.cbxCategoria.Location = new System.Drawing.Point(513, 112);
             this.cbxCategoria.Name = "cbxCategoria";
-            this.cbxCategoria.Size = new System.Drawing.Size(106, 21);
+            this.cbxCategoria.Size = new System.Drawing.Size(136, 21);
             this.cbxCategoria.TabIndex = 34;
             // 
             // frmProductos
@@ -291,8 +273,6 @@ namespace AproMercancia.PL
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtCantTotal);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCantBodega);
             this.Controls.Add(this.label6);
@@ -331,8 +311,6 @@ namespace AproMercancia.PL
         private System.Windows.Forms.TextBox txtCantTienda;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtCantBodega;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtCantTotal;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.Button btnAgregar;

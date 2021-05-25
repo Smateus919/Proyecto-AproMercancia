@@ -46,9 +46,9 @@ namespace AproMercancia.PL
             oProductosBLL.cantTotal = CantTienda + CantBodega;
 
             int idCategoria = 0;
-            int.TryParse(cbxCategoria.SelectedValue.ToString(), out idCategoria);
+            int.TryParse(cbxCategoria.SelectedIndex.ToString(), out idCategoria);
 
-            oProductosBLL.Categoria = idCategoria;
+            oProductosBLL.Categoria = idCategoria+1;
 
             return oProductosBLL;
         }

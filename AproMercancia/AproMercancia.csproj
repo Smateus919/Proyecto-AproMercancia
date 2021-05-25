@@ -54,7 +54,9 @@
   <ItemGroup>
     <Compile Include="DAL\CategoriasDAL.cs" />
     <Compile Include="DAL\ConexionDAL.cs" />
+    <Compile Include="DAL\EmpleadosDAL.cs" />
     <Compile Include="DAL\ProductosDAL.cs" />
+    <Compile Include="DAL\VentasDAL.cs" />
     <Compile Include="DLL\ProductosBLL.cs" />
     <Compile Include="DLL\VentasBLL.cs" />
     <Compile Include="Form1.cs">

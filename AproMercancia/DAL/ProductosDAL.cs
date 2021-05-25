@@ -21,7 +21,7 @@ namespace AproMercancia.DAL
         public bool Agregar(ProductosBLL oProductosBLL)
         {
             return Conexion.executeCommandNoDataReturn("insert into producto(nombre, valor, cant_tienda, cant_bodega, id_categoria) " +
-                "VALUES ('"+oProductosBLL.Nombre+"', "+oProductosBLL.Valor+", "+oProductosBLL.cantTienda+", "+oProductosBLL.cantBodega+", 4);");
+                "VALUES ('"+oProductosBLL.Nombre+"', "+oProductosBLL.Valor+", "+oProductosBLL.cantTienda+", "+oProductosBLL.cantBodega+", "+oProductosBLL.Categoria+");");
         }
         public int Eliminar(ProductosBLL oProductosBLL)
         {

@@ -3,25 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using System.Data;
 using System.Data.SqlClient;
 using AproMercancia.BLL;
 
+
 namespace AproMercancia.DAL
 {
-    class CategoriasDAL
+    class EmpleadosDAL
     {
         ConexionDAL Conexion;
-
-        public CategoriasDAL()
+        public EmpleadosDAL()
         {
             Conexion = new ConexionDAL();
         }
-        public DataSet ShowCategories()
+        public DataSet ShowEmpleados()
         {
-            SqlCommand Sentencia = new SqlCommand("SELECT * FROM categoria");
+            SqlCommand Sentencia = new SqlCommand("SELECT * FROM vendedor");
             return Conexion.ExecuteSentences(Sentencia);
         }
     }
 }
+
