@@ -10,3 +10,4 @@ C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMe
 C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\bin\Debug\AproMercancia.pdb
 C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\obj\Debug\AproMercancia.exe
 C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\obj\Debug\AproMercancia.pdb
+C:\Users\seb_m\Documents\Universidad\Proyecto_AproMercancia\AproMercancia\AproMercancia\obj\Debug\AproMercancia.PL.frmVendedores.resources

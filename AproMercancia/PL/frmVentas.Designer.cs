@@ -76,6 +76,7 @@ namespace AproMercancia.PL
             this.dgvVentas.RowTemplate.Height = 25;
             this.dgvVentas.Size = new System.Drawing.Size(634, 224);
             this.dgvVentas.TabIndex = 12;
+            this.dgvVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVentas_CellContentClick);
             this.dgvVentas.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Seleccionar);
             // 
             // label3
@@ -127,9 +128,9 @@ namespace AproMercancia.PL
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnAgregar.BackColor = System.Drawing.Color.LimeGreen;
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAgregar.Location = new System.Drawing.Point(172, 355);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(91, 25);
@@ -142,7 +143,7 @@ namespace AproMercancia.PL
             // 
             this.btnBorrar.BackColor = System.Drawing.Color.Salmon;
             this.btnBorrar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnBorrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBorrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBorrar.Location = new System.Drawing.Point(288, 355);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(91, 25);

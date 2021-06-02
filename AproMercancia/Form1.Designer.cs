@@ -72,7 +72,7 @@
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
             this.linkLabel2.LinkColor = System.Drawing.Color.RoyalBlue;
-            this.linkLabel2.Location = new System.Drawing.Point(304, 254);
+            this.linkLabel2.Location = new System.Drawing.Point(534, 260);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(71, 25);
             this.linkLabel2.TabIndex = 2;
@@ -85,12 +85,13 @@
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
             this.linkLabel3.LinkColor = System.Drawing.Color.RoyalBlue;
-            this.linkLabel3.Location = new System.Drawing.Point(516, 254);
+            this.linkLabel3.Location = new System.Drawing.Point(285, 260);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(108, 25);
+            this.linkLabel3.Size = new System.Drawing.Size(118, 25);
             this.linkLabel3.TabIndex = 3;
             this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Empleados";
+            this.linkLabel3.Text = "Vendedores";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // pictureBox1
             // 
@@ -104,7 +105,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(267, 105);
+            this.pictureBox2.Location = new System.Drawing.Point(497, 111);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(151, 153);
             this.pictureBox2.TabIndex = 5;
@@ -113,7 +114,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(500, 105);
+            this.pictureBox3.Location = new System.Drawing.Point(269, 111);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(152, 153);
             this.pictureBox3.TabIndex = 6;

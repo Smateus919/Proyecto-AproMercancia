@@ -6,22 +6,20 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using AproMercancia.BLL;
-
-
 namespace AproMercancia.DAL
 {
-    class EmpleadosDAL
+    class TiendasDAL
     {
         ConexionDAL Conexion;
-        public EmpleadosDAL()
+
+        public TiendasDAL()
         {
             Conexion = new ConexionDAL();
         }
-        public DataSet ShowEmpleados()
+        public DataSet ShowStores()
         {
-            SqlCommand Sentencia = new SqlCommand("SELECT * FROM vendedor");
+            SqlCommand Sentencia = new SqlCommand("SELECT * FROM tienda");
             return Conexion.ExecuteSentences(Sentencia);
         }
     }
 }
-

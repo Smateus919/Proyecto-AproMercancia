@@ -34,5 +34,11 @@ namespace AproMercancia
             frmVentas fVentas = new frmVentas();
             fVentas.Show();
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmVendedores fVendedores = new frmVendedores();
+            fVendedores.Show();
+        }
     }
 }

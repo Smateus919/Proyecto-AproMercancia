@@ -20,6 +20,7 @@ namespace AproMercancia.PL
         {
             oVentasDAL = new VentasDAL();
             InitializeComponent();
+            ClearIntro();
             FillGrid();
         }
         private VentasBLL getInformation()
@@ -39,6 +40,10 @@ namespace AproMercancia.PL
         private void FillGrid()
         {
             dgvVentas.DataSource = oVentasDAL.ShowVentas().Tables[0];
+
+            dgvVentas.Columns[0].HeaderText = "Nombre de producto";
+            dgvVentas.Columns[1].HeaderText = "Nombre de empleado";
+            dgvVentas.Columns[2].HeaderText = "Cantidad de ventas";
         }
         private void Ventas_Load(object sender, EventArgs e)
         {
@@ -46,7 +51,7 @@ namespace AproMercancia.PL
             cbxProducto.DataSource = oProductoDAL.ShowProducts().Tables[0];
             cbxProducto.DisplayMember = "nombre";
 
-            EmpleadosDAL oEmpleadosDAL = new EmpleadosDAL();
+            DAL.VendedoresDAL oEmpleadosDAL = new DAL.VendedoresDAL();
             cbxEmpleados.DataSource = oEmpleadosDAL.ShowEmpleados().Tables[0];
             cbxEmpleados.DisplayMember = "nombre";
 
@@ -58,6 +63,7 @@ namespace AproMercancia.PL
         {
             MessageBox.Show("Conexion: " + oVentasDAL.addVentas(getInformation()));
             FillGrid();
+            ClearIntro();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -67,17 +73,36 @@ namespace AproMercancia.PL
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Actualización: " + oVentasDAL.Eliminar(getInformation()));
+            MessageBox.Show("Eliminacion: " + oVentasDAL.Eliminar(getInformation()));
             FillGrid();
+            ClearIntro();
         }
 
         private void Seleccionar(object sender, DataGridViewCellMouseEventArgs e)
         {
             int indice = e.RowIndex;
 
-            cbxProducto.Text = dgvVentas.Rows[indice].Cells[0].Value.ToString();
-            cbxEmpleados.Text = dgvVentas.Rows[indice].Cells[1].Value.ToString();
-            txtCantidad.Text = dgvVentas.Rows[indice].Cells[2].Value.ToString();
+            if (indice>=0)
+            {
+                cbxProducto.Text = dgvVentas.Rows[indice].Cells[0].Value.ToString();
+                cbxEmpleados.Text = dgvVentas.Rows[indice].Cells[1].Value.ToString();
+                txtCantidad.Text = dgvVentas.Rows[indice].Cells[2].Value.ToString();
+
+                btnAgregar.Enabled = false;
+                btnBorrar.Enabled = true;
+            }
+
+        }
+        private void ClearIntro()
+        {
+            cbxProducto.Text = "";
+            cbxEmpleados.Text = "";
+            txtCantidad.Text = "";
+        }
+
+        private void dgvVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

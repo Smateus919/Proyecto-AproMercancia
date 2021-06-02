@@ -94,6 +94,7 @@ namespace AproMercancia.PL
             txtValor.Text = "";
             txtCantBodega.Text = "";
             txtCantTienda.Text = "";
+            cbxCategoria.Text = "";
 
             btnAgregar.Enabled = true;
             btnEditar.Enabled = false;
@@ -114,6 +115,7 @@ namespace AproMercancia.PL
             dgvProductos.Columns[2].HeaderText = "Valor";
             dgvProductos.Columns[3].HeaderText = "Cant. Tienda";
             dgvProductos.Columns[4].HeaderText = "Cant. Bodega";
+            dgvProductos.Columns[5].HeaderText = "Categoria";
 
         }
 

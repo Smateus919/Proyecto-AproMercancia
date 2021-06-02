@@ -190,7 +190,7 @@ namespace AproMercancia.PL
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.LimeGreen;
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnAgregar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAgregar.Location = new System.Drawing.Point(121, 151);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(64, 25);

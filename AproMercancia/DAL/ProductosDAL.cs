@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using AproMercancia.BLL;
+using AproMercancia.DLL;
 
 namespace AproMercancia.DAL
 {
     class ProductosDAL
     {
         ConexionDAL Conexion;
-
+        
         public ProductosDAL()
         {
             Conexion = new ConexionDAL();
@@ -41,7 +42,7 @@ namespace AproMercancia.DAL
         }
         public DataSet ShowProducts()
         {
-            SqlCommand Sentencia = new SqlCommand("SELECT * FROM producto");
+            SqlCommand Sentencia = new SqlCommand("SELECT producto.referencia_prod, producto.nombre, producto.valor, producto.cant_tienda, producto.cant_bodega, categoria.nombre FROM producto INNER JOIN categoria ON producto.id_categoria=categoria.id_categoria;");
             return Conexion.ExecuteSentences(Sentencia);
         }
     }
